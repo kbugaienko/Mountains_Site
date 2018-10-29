@@ -205,3 +205,19 @@ header nav li {
   font-size: 30px;
   margin: 25px 0;
 }
+
+/* ========================================================================= */
+/* Testimonials Section */
+/* ========================================================================= */
+
+.testimonials .quote {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 40px 0 25px;
+}
+
+.testimonials .author {
+  font-style: oblique;
+}
