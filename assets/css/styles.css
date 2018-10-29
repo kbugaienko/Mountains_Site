@@ -81,6 +81,13 @@ section p{
   text-align: center;
 }
 
+/* reduce a padding for sections with max-width 800px  for small screen */
+@media (max-width: 800px) {
+  section {
+    padding: 50px 20px;
+  }
+}
+
 /* ========================================================================= */
 /* Header Styles */
 /* ========================================================================= */
@@ -117,9 +124,22 @@ header nav li {
   margin: 0 15px;
 }
 
+/* reduce a padding in section of header for small screen */
+@media (max-width: 800px) {
+  header {
+    padding: 20px 50px;
+    flex-direction: column;
+    align-items: center;
+  }
+  header h2 {
+    margin-bottom: 15px;
+  }
+}
+
 /* ========================================================================= */
 /* Hero Styles */
 /* ========================================================================= */
+
 .hero {
   position: relative;
   justify-content: center;
@@ -167,6 +187,24 @@ header nav li {
   }
 }
 
+@media (max-width: 800px) {
+  .hero {
+    min-height: 600px;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .hero h3 {
+    font-size: 24px;
+  }
+
+  .hero a.btn {
+    padding: 15px 40px;
+  }
+}
+
 /* ========================================================================= */
 /* Destinations Section */
 /* ========================================================================= */
@@ -187,6 +225,19 @@ header nav li {
   flex-basis: 70%;
 }
 
+@media (max-width: 1100px) {
+  .destinations .grid li.small,
+  .destinations .grid li.large {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 800px) {
+  .destinations .grid li.small,
+  .destinations .grid li.large {
+    flex-basis: 100%;
+  }
+}
 /* ========================================================================= */
 /* Packages Section */
 /* ========================================================================= */
@@ -206,6 +257,12 @@ header nav li {
   margin: 25px 0;
 }
 
+@media (max-width: 800px) {
+  .packages .grid li {
+    flex-basis: 50%;
+    padding: 20px;
+  }
+}
 /* ========================================================================= */
 /* Testimonials Section */
 /* ========================================================================= */
@@ -222,6 +279,16 @@ header nav li {
   font-style: oblique;
 }
 
+@media (max-width: 800px) {
+  .testimonials .quote {
+    font-size: 18px;
+    margin: 15px 0;
+  }
+
+  .testimonials .author {
+    font-size: 14px;
+  }
+}
 /* ========================================================================= */
 /* Contact Section */
 /* ========================================================================= */
@@ -246,9 +313,16 @@ header nav li {
   flex: 1;
 }
 
+@media (max-width: 1000px) {
+  .contact form input {
+    flex-basis: 100%;
+    margin: 0 0 20px 0;
+  }
+}
 /* ========================================================================= */
 /* Footer Section */
 /* ========================================================================= */
+
 footer {
   display: flex;
   align-items: center;
@@ -271,4 +345,19 @@ footer p {
   font-size: 14px;
   opacity: 0.6;
   align-self: center;
+}
+
+@media (max-width: 1100px) {
+  footer {
+    flex-direction: column;
+  }
+
+  footer p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  footer ul li {
+    margin: 0 8px;
+  }
 }
